@@ -50,6 +50,6 @@ async def get_item_details(item_id : str):
     return database.get_item_by_id(int(item_id))
 
 @app.get("/search/") #search for all items with name = given keyword [keyword = query param]
-def get_keyword(name: str):  
-    return database.search_keyword(name)
+def get_keyword(keyword: str):  
+    return database.search_keyword(keyword)
     
